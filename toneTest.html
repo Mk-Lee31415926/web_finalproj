@@ -113,8 +113,8 @@
 		//意思是說需要使用者做出動作產生event才允許撥放
 		var _doc = document;
 		var note = ["C2","C#2","D2","D#2","E2","F2","F#2","G2","G#2","A2","A#2","B2",
-					"C3","C#3","D3","D#3","E3","F3","F#3","G3","G#3","A3","A#3","B3",
-					"C4","C#4","D4","D#4","E4","F4","F#4","G4","G#4","A4","A#4","B4"];
+			"C3","C#3","D3","D#3","E3","F3","F#3","G3","G#3","A3","A#3","B3",
+			"C4","C#4","D4","D#4","E4","F4","F#4","G4","G#4","A4","A#4","B4"];
 		var random;
 		var triad = []; //題目
 		var user_answer = []; //使用者的嘗試
@@ -303,30 +303,28 @@
 						<h1>辨別:大和弦&小和弦</h1>
 					</div>
 					<div class="panel-body">
-						<h3>簡單介紹</h3>一個音階的聲音是由該音階中特定的音程關係所決定的。 <br>大調和小調音階是最常見的兩種音階，它們常被運用於各類型音樂中。<br>
-						除了這兩種外，還有許多其他音階。<br>
-						大調音階包含七個音符（第八個音開始循環）<br>
-						鋼琴上琴鍵可以想像成是距離(音符和音符之間的音程)，C到D之間距離是2(C-C#-D),即是一個全音。(<2br>
+						<h3>簡單介紹</h3>
+						一個音階的聲音是由該音階中特定的音程關係所決定的。<br>
+						大調和小調音階是最常見的兩種音階，它們常被運用於各類型音樂中。<br>
+						大調音階包含C,D,E,F,G,A,B 七個音符（第八個音開始循環,即俗稱的'高八度'）<br>
+						鋼琴上琴鍵可以想像成是距離(音符和音符之間的音程)<br>
+						C到D之間距離是2(C-C#-D),即是一個全音。<br>
 						E到F之間沒有間隔,即是半音。<br>
-						任何一個大調音階，不論主音是什麼，都有著這樣的全音和半音的特定組合：
-						全 - 全 - 半 - 全 - 全 - 全 - 半<br>
+						C-> C 一度 C->D 二度 C->E 三度<br>
 						大和弦 C (C E G) C-D-E 三度音 <br>
 						小和弦Cm (C Eb G) C-D-Eb 小三度音
 						
-						
-
-
-                       </div>
+                       			</div>
 					<div class="panel-footer">
 						<h3>Button:</h3>
-                        <button class="btn btn-primary" id = "maj">major chord</button>
+                        			<button class="btn btn-primary" id = "maj">major chord</button>
 						<button class="btn btn-info" id = "min">minor chord</button>
 						<button class="btn btn-success" id = "repeat" disabled="true">repeat</button>
 						<button class="btn btn-danger" id = "validate">check</button>
 						<button class="btn btn-danger" id = "reset">Reset</button>
 						<button class="btn btn-warning" onclick="showModal()">使用說明</button>
 						<!-- <p id = "showanswer"></p> -->
-                    </div>			
+                    			</div>			
 				</div>
 					
 			</div>
