@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -267,6 +268,19 @@
 			keyboard.addEventListener("mouseup", e => {
 				synth.triggerRelease();
 			})
+
+			$("#page2_btn").click(function(){
+  				$("#page2").slideToggle(1000);
+			});
+
+			$("#page2_btn1").click(function(){
+  				$("#page21").slideToggle(1000);
+			});
+
+			$("#page2_btn2").click(function(){
+  				$("#page22").slideToggle(1000);
+			});
+			
 		}
 		window.addEventListener("load",init,false);
   	</script>
@@ -291,8 +305,8 @@
 	<!---->
 	<div class="container">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="#tab1" data-toggle="tab">Page1</a></li>	
-			<!-- <li><a href="#tab2" data-toggle="tab">頁籤2</a></li> -->
+			<li class="active"><a href="#tab1" data-toggle="tab">Practice</a></li>	
+			<li><a href="#tab2" data-toggle="tab">Channel</a></li>
 		</ul>
 			
 		<div class="tab-content">
@@ -327,20 +341,36 @@
 				</div>
 					
 			</div>
+
 				
-			<!-- <div class="tab-pane fade" id="tab2" style="text-align: center;">
+			<div class="tab-pane fade" id="tab2" style="text-align: center;">
 				<div class="panel panel-warning">
 					<div class="panel-heading">
-						<h1>小標題2</h1>
+						<h1>Youtube音樂分享</h1>
 					</div>
 					<div class="panel-body">
-                        內容2
+						
+                        <h2 id = "page2_btn" style="background-color: rgba(255,100,0,0.3);">NiceChord NiceChord 好和弦 - 不可不知的基礎樂理</h2>
+                        <p id = "page2" style="display: none;">
+                        <iframe width="679" height="382" src="https://www.youtube.com/embed/QLDktqMxgmY?list=PLmVjZfPp5kiNVtlRBphjzBUIH_Xa15h08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    	</p>
+
+                    	<h2 id = "page2_btn1" style="background-color: rgba(255,100,0,0.3);">十分鐘以內，一次搞懂所有的現代和弦代號！</h2>
+                        <p id = "page21" style="display: none;">
+                        <iframe width="679" height="382" src="https://www.youtube.com/embed/I0y2LY4sPZA?list=PLmVjZfPp5kiNVtlRBphjzBUIH_Xa15h08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    	</p>
+                    	
+                    	<h2 id = "page2_btn2" style="background-color: rgba(255,100,0,0.3);">和弦有什麼功能？</h2>
+                        <p id = "page22" style="display: none;">
+                        <iframe width="679" height="382" src="https://www.youtube.com/embed/kMlJSwFAiTU?list=PLmVjZfPp5kiNVtlRBphjzBUIH_Xa15h08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    	</p>
+
                     </div>
 					<div class="panel-footer">
-                        尾巴2
+                        
                     </div>	
 				</div>		
-			</div> -->
+			</div>
 				
 				
 		</div>
